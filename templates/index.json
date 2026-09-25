@@ -43,13 +43,13 @@
       "type": "devGrid",
       "name": "Grid",
       "settings": {
-        "heading": "",
+        "heading": "Tisso vison in the wild",
         "cartBtn": "Add to cart",
         "defOption": "Choose your size",
-        "btnBgColor1": "#000",
-        "btnColor1": "#fff",
-        "btnHoverBg1": "#FFF544",
-        "btnHoverColor1": "#000"
+        "btnBgColor1": "#FFF544",
+        "btnColor1": "#000000",
+        "btnHoverBg1": "#000000",
+        "btnHoverColor1": "#FFFFFF"
       }
     }
   },
