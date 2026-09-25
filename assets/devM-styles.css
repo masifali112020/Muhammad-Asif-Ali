@@ -1,0 +1,795 @@
+@font-face {
+    font-family: 'Jost';
+    src: url("https://cdn.shopify.com/s/files/1/1020/6507/8570/files/Jost-Regular.ttf?v=1790241457");
+}
+
+@font-face {
+    font-family: 'JostMedium';
+    src: url("https://cdn.shopify.com/s/files/1/1020/6507/8570/files/Jost-Medium.ttf?v=1790241902");
+}
+
+@font-face {
+    font-family: 'JostLight';
+    src: url("https://cdn.shopify.com/s/files/1/1020/6507/8570/files/Jost-Light.ttf?v=1790249319");
+}
+
+@font-face {
+    font-family: 'Lustria';
+    src: url("https://cdn.shopify.com/s/files/1/1020/6507/8570/files/Lustria-Regular.ttf?v=1790244655");
+}
+
+
+
+.sectionWrapper, .devImageBanner .bottomBar {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.devCustomHeader .headerWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50.78px;
+}
+
+.devCustomHeader .leftImage {
+    line-height: 1;
+}
+
+.devCustomHeader .centerContent p {
+    margin: 0px;
+    font-size: 16px;
+    line-height: 13.42px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    font-family: 'Jost';
+}
+
+.devCustomHeader .headerButton {
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 20.48px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    padding: 11.77px 36.5px;
+    font-size: 16px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    column-gap: 17px;
+    font-family: 'Jost';
+}
+
+.devImageBanner .sectionWrapper {
+    position: relative;
+    line-height: 0;
+}
+
+.devImageBanner .sectionImage img {
+    width: 100%;
+}
+
+.devImageBanner .bannerContent {
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    max-width: 617px;
+    padding: 51px 67px;
+}
+
+.devImageBanner .bannerContent h1 {
+    margin: 0px;
+    font-size: 70px;
+    line-height: 100%;
+    font-weight: 500;
+    letter-spacing: 0px;
+    font-family: 'JostMedium';
+    padding-bottom: 50px;
+}
+
+.devImageBanner .bannerContent p {
+    margin: 0px;
+    font-size: 20px;
+    line-height: 140%;
+    font-weight: 400;
+    letter-spacing: 0px;
+    font-family: 'Jost';
+}
+
+.devImageBanner .bannerContent .text {
+    padding-bottom: 50px;
+}
+
+.devImageBanner .btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 20.48px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    padding: 14.77px 45.1px;
+    font-size: 16px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    column-gap: 17px;
+    font-family: Jost;
+    width: fit-content;
+}
+
+.devImageBanner .bottomBar {
+    text-align: center;
+    padding: 10.3px 0px;
+}
+
+.devImageBanner .bottomBar p {
+    margin: 0px;
+    font-size: 16px;
+    line-height: 13.42px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    font-family: 'Jost';
+}
+
+.devProductGrid .devGridWrapper {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 30px 0px 50px;
+}
+
+.devProductGrid .devGridWrapper img {
+    width: 100%;
+}
+
+.devProductGrid .product {
+    line-height: 0;
+    position: relative;
+}
+
+.devProductGrid h2 {
+    font-size: 36px;
+    padding-top: 90px;
+    font-family: 'Lustria';
+    font-weight: 400;
+    margin: 0px;
+    line-height: 120%;
+    letter-spacing: 0px;
+}
+
+.devProductGrid .mainWrap {
+    padding: 0px 51.5px;
+}
+
+.devProductGrid .devGridWrapper img {
+    width: 100%;
+    height: 444px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.devProductGrid .devQuickViewBtn {
+    background-color: #F8F8F8E5;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* POPUP */
+
+.devProductGrid .devQuickView {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: none;
+    align-items: center;
+    background-color: #00000042;
+    justify-content: center;
+}
+
+.devProductGrid .devQuickView.active {
+    display: flex;
+}
+
+.devProductGrid .devQuickViewOverlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.devProductGrid .devQuickViewPopup {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 311px;
+    background: #fff;
+    padding: 17px 17px 25px;
+}
+
+.devProductGrid .devQuickViewClose {
+    position: relative;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    z-index: 5;
+    display: block;
+    width: 100%;
+    max-width: fit-content;
+    margin: 0 auto;
+    margin-right: 0;
+    padding: 0;
+}
+
+.devProductGrid .devQuickViewInner .devInfoWrap {
+    display: flex;
+    column-gap: 8px;
+}
+
+.devProductGrid .devQuickViewImage img {
+    width: 120px;
+    height: 140px;
+}
+
+.devProductGrid .devQuickViewInfo {
+    padding: 13px 0px 0px;
+    color: #000;
+}
+
+.devProductGrid .devQuickViewInfo h2 {
+    margin: 0 0 20px;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 0;
+    font-family: JostLight;
+    letter-spacing: 0px;
+    line-height: 120%;
+}
+
+.devProductGrid .devVariantOption:last-child {
+    padding-top: 7px;
+}
+
+.devProductGrid .devVariantWrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    margin-bottom: 51px;
+}
+
+.devProductGrid .devQuickViewDescription p {
+    margin-bottom: 0px;
+}
+
+.devProductGrid form.devAddToCartForm {
+    padding: 0 3px;
+}
+
+.devProductGrid .devQuickViewPrice {
+    margin: 0 0 12px;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0;
+    font-family: Lustria;
+    letter-spacing: 0px;
+    line-height: 120%;
+}
+
+.devProductGrid .sale-price {
+    color: #d00;
+}
+
+.devProductGrid .compare-price {
+    margin-left: 8px;
+    color: #888;
+    text-decoration: line-through;
+}
+
+.devProductGrid .devQuickViewDescription {
+    margin-bottom: 0px;
+    font-size: 14px;
+    line-height: 110.00000000000001%;
+    letter-spacing: -1%;
+    font-family: JostLight;
+    font-weight: 300;
+}
+
+.devProductGrid .devVariantOption label, .devProductGrid .devQuantityWrapper label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-family: Jost;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 130%;
+    text-align: left;
+}
+
+.devProductGrid .devAddToCart svg path {
+    fill: #fff;
+}
+
+.devProductGrid .devAddToCart svg {
+    width: 33px;
+    height: 33px;
+}
+
+.devProductGrid .devVariantOptions .devVariantOption {
+    text-align: center;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    font-family: Jost;
+    padding: 10px 5px;
+    text-transform: uppercase;
+}
+
+.devProductGrid .devVariantOptions .devVariantOption:hover {
+  background: #000 !important;
+  color: #fff !important;
+}
+
+.devProductGrid .devQuantityWrapper {
+    margin-bottom: 20px;
+}
+
+.devProductGrid .devQuantity {
+    display: flex;
+    width: 110px;
+    height: 40px;
+    border: 1px solid #ccc;
+}
+
+.devProductGrid .devQuantity button {
+    width: 35px;
+    border: 0;
+    background: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.devProductGrid .devQtyInput {
+    width: 40px;
+    border: 0;
+    text-align: center;
+}
+
+.devProductGrid .devAddToCart {
+    width: 100%;
+    height: 45px;
+    border: 0;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 20.48px;
+    letter-spacing: 0px;
+    font-family: Jost;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 28.8px;
+}
+
+.devProductGrid .devAddToCart:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+.devProductGrid .devVariantLabel {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #222;
+}
+
+.devProductGrid .devColorOptions {
+  display: flex;
+  width: 100%;
+  border: 1px solid #000;
+}
+
+/* .devProductGrid .devColorOption {
+    position: relative;
+    flex: 1;
+    height: 40px;
+    padding: 0 14px;
+    background: #fff;
+    border: 0;
+    border-right: 1px solid #000;
+    font-size: 18px;
+    color: #000;
+    cursor: pointer;
+    letter-spacing: -2%;
+    font-family: Jost;
+    line-height: 100%;
+} */
+
+.devProductGrid .devColorOption:last-child {
+  border-right: 0;
+}
+
+.devProductGrid .devColorOptions button:before {
+    content: "";
+    border-left: .5px solid #000;
+    border-right: .5px solid #000;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0px;
+}
+
+.devProductGrid .devVariantSelect {
+    width: 100%;
+    height: 40.44px;
+    padding: 0 0px 0 13px;
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #222;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.devProductGrid .devVariantSelect {
+    position: relative;
+    width: 100%;
+}
+
+.devProductGrid .devVariantSelectTrigger {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    height: 100%;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    font-family: Jost;
+    font-weight: 400;
+}
+
+.devProductGrid .devSelectedValue {
+    text-align: left;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    font-family: Jost;
+    font-weight: 400;
+    color: #000;
+}
+
+.devProductGrid .devSelectArrow {
+    width: 55px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #000;
+}
+
+.devProductGrid .devVariantOptions {
+    /* display: none; */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #000;
+    z-index: 999;
+}
+
+.devVariantOptions {
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: height 0.4s ease, opacity 0.4s ease;
+}
+
+.devVariantSelect.is-open .devVariantOptions, .devVariantSelect.is-open .devVariantOption {
+    opacity: 1;
+}
+
+.devVariantSelect .devVariantOption {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.devProductGrid .devVariantOption {
+    padding: 11.52px 3px 0px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.mobileHeaderWrap, .devImageBanner .bannerAbsBtn {
+    display: none;
+}
+
+.devProductGrid button.devColorOption.is-selected {
+    background-color: transparent;
+    color: #fff;
+}
+
+.devProductGrid .devColorOptions {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+.devProductGrid .devColorOption {
+    position: relative;
+    z-index: 2;
+    flex: 1;
+    height: 42px;
+    border: none;
+    background: transparent;
+    color: #000;
+    cursor: pointer;
+    font-size: 18px;
+    color: #000;
+    cursor: pointer;
+    letter-spacing: -2%;
+    font-family: Jost;
+    line-height: 100%;   
+    transition: color 0.3s ease;
+}
+
+.devProductGrid .devColorOptions::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 4.84px;
+    width: calc(50% - 4.84px);
+    background: #000;
+    z-index: 1;
+    transition: transform 0.35s ease;
+}
+
+.devProductGrid .devColorOptions.second-selected::after {
+    transform: translateX(calc(100% + 5.84px));
+}
+
+.devProductGrid .devColorOptions .devColorOption:last-child::before {
+    border-right: 0;
+}
+
+.devImageBanner .bottomBar .mobileContent, .devImageBanner .mobileImage {
+    display: none;
+}
+
+.devProductGrid .devSizeError {
+    display: block;
+    color: red;
+    position: relative;
+    line-height: 1;
+    padding-top: 6px;
+    text-align: left;
+    font-size: 16px;
+    font-family: Jost;
+}
+
+.devVariantSelect .devSelectArrow svg {
+    transition: transform 0.5s ease;
+}
+
+.devVariantSelect.is-open .devSelectArrow svg {
+    transform: rotate(180deg);
+}
+
+
+/**************** Media Queries  ***************/
+
+
+@media (max-width: 1200px){
+    .devProductGrid .devGridWrapper {
+        grid-template-columns: 1fr 1fr;
+    } 
+    
+    .devImageBanner .bannerContent h1 {
+        font-size: 50px;
+        padding-bottom: 20px;
+    }  
+
+    .devImageBanner .bannerContent p {
+        font-size: 18px;
+    }
+
+    .devImageBanner .bannerContent .text {
+        padding-bottom: 25px;
+    }
+
+    .devImageBanner .bannerContent {
+        max-width: 500px;
+        padding: 30px;
+    }    
+
+}
+
+@media (max-width: 989px){
+    .devCustomHeader .headerWrap {
+        display: none;
+    }   
+    
+    .devCustomHeader .mobileHeaderWrap {
+        display: block;
+    }
+
+    .devCustomHeader .menuIcon .closeIcon {
+        display: none;
+    }
+    
+    .devCustomHeader .mobileInnerWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        padding: 21.5px 16px;
+    }
+
+    .devCustomHeader .menuIcon {
+        position: absolute;
+        left: 16px;
+        z-index: 5;
+        cursor: pointer;
+    }
+
+    .devCustomHeader .menuIcon.active .hamburgerIcon {
+        display: none !important;
+    }
+
+    .devCustomHeader .closeIcon svg path {
+        stroke-width: 1.2px;
+    }    
+
+    .devCustomHeader .menuIcon .closeIcon svg {
+        width: 27px;
+        height: 27px;
+    }        
+
+    .devCustomHeader .menuIcon.active .closeIcon {
+        display: block;
+    }    
+
+    .devCustomHeader .mobileCollapContent {
+        text-align: center;
+        padding: 0 25px;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.5s ease-in-out;
+    }
+
+    .devCustomHeader .mobileCollapContent .centerContent {
+        padding-bottom: 16px;
+        padding-top: 26px;
+    }
+        
+    .devCustomHeader .mobileCollapContent .rightContent {
+        padding-bottom: 25px;
+    }
+
+    .devCustomHeader .headerButton {
+        padding: 11.77px 43.66px;
+        column-gap: 29.38px;
+        max-width: fit-content;
+        margin: 0 auto;
+    }
+
+    .devCustomHeader .mobileHeaderWrap.active .mobileInnerWrapper {
+        box-shadow: 0px 2px 4px 0px #00000026;
+    }
+
+    .devImageBanner .bannerContent {
+        max-width: 100%;
+        padding: 49px 12px 12px;
+        position: relative;
+        text-align: center;
+    }
+
+    .devImageBanner .bannerContent h1 {
+        font-size: 30px;
+        padding-bottom: 24px;
+    }
+
+    .devImageBanner .bannerContent p {
+        font-size: 16px;
+        line-height: 130%;
+    }
+
+    .devImageBanner .bannerContent .btn {
+        display: none;
+    }   
+        
+    .devImageBanner .bannerContent .text {
+        padding-bottom: 0PX;
+    }  
+    
+    .devImageBanner .sectionWrapper {
+        display: flex;
+        flex-direction: column-reverse;
+    }    
+
+    .devImageBanner .bannerAbsBtn {
+        position: absolute;
+        bottom: 0;
+        max-width: 100%;
+        padding: 39px 16px;
+        width: 100%;
+        display: flex !important;
+        justify-content: center;
+    }
+
+    .devImageBanner .btn {
+        padding: 12.266px 28.1px;
+        column-gap: 24px;
+    }
+
+    .devImageBanner .bottomBar p {
+        font-size: 14px;
+    }    
+
+    .devImageBanner .bottomBar .mobileContent, .devImageBanner .mobileImage {
+        display: block;
+    }
+
+    .devImageBanner .bottomBar .deskContent, .devImageBanner .deskImage {
+        display: none;
+    }
+
+    .devProductGrid h2 {
+        font-size: 24px;
+        padding-top: 40px;
+        text-align: center;
+    }
+
+    .devProductGrid .mainWrap {
+        padding: 0 16.72px;
+    }
+
+    .devProductGrid .devGridWrapper {
+        grid-gap: 4px;
+        padding: 20px 0px 30px;
+    } 
+
+    .devProductGrid .product {
+        position: relative;
+        height: 100%;
+        padding-top: 110.4444%;
+    }   
+
+    .devProductGrid .devGridWrapper .product > img {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }   
+    
+    .devProductGrid .devQuickViewBtn {
+        right: 52px!important;
+        top: 18px!important;
+    }    
+
+}
+
+@media (max-width: 550px){
+    .devProductGrid .devQuickViewBtn svg {
+        width: 8px;
+        height: 8px;
+    }
+    
+    .devProductGrid .devQuickViewBtn {
+        width: 15.71px;
+        height: 15.71px;
+    }
+}
