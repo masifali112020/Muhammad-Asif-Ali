@@ -104,10 +104,10 @@
         "heading": "Tisso vison in the wild",
         "cartBtn": "Add to cart",
         "defOption": "Choose your size",
-        "btnBgColor1": "#FFF544",
-        "btnColor1": "#000000",
-        "btnHoverBg1": "#000000",
-        "btnHoverColor1": "#FFFFFF"
+        "btnBgColor1": "#000000",
+        "btnColor1": "#FFFFFF",
+        "btnHoverBg1": "#FFF544",
+        "btnHoverColor1": "#000000"
       }
     }
   },
