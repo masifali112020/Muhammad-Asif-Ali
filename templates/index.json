@@ -9,54 +9,28 @@
  */
 {
   "sections": {
-    "featured_collection": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "collection": "all",
-        "products_to_show": 8,
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "columns_desktop": 4,
-        "enable_desktop_slider": false,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 44,
-        "padding_bottom": 36
-      }
-    },
     "dev_banner_XWeyjr": {
       "type": "devBanner",
       "name": "Banner",
       "settings": {
-        "text1": "",
-        "btnLabel1": "",
-        "btnLink1": "",
+        "image1": "shopify://shop_images/logo_59e9be11-1c0d-47e6-8615-b6bbec6a7f91.png",
+        "text1": "<p>Find the ideal gift for your loved ones.</p>",
+        "btnLabel1": "Choose gift",
+        "btnLink1": "shopify://collections",
         "bgColor1": "#f5f5f5",
         "textColor1": "#000",
         "btnBgColor1": "#fff544",
         "btnColor1": "#000",
         "btnHoverBg1": "#000",
         "btnHoverColor1": "#fff",
-        "heading": "",
-        "text": "",
-        "btnLabel": "",
-        "btnLink": "",
-        "bottomtext": "",
-        "bottomtextMob": "",
+        "image": "shopify://shop_images/imageBanner_6d00258c-d5fa-41dc-82ad-0f1cacf576aa.png",
+        "mobimage": "shopify://shop_images/mobileImage_b8c37971-3a8c-49db-b103-209cad490fd6.png",
+        "heading": "The Gift Guide",
+        "text": "<p>Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season.</p>",
+        "btnLabel": "Shop Now",
+        "btnLink": "shopify://collections",
+        "bottomtext": "<p>SUSTAINABLE, ETHICALLY MADE CLOTHES IN SIZES XXS TO 6XL</p>",
+        "bottomtextMob": "<p>SUSTAINABLE, ETHICALLY MADE ACTIVEWEAR</p>",
         "textColor": "#000",
         "btnBgColor": "#000",
         "btnColor": "#fff",
@@ -64,10 +38,81 @@
         "btnHoverColor": "#000",
         "barBgColor": "#f5f5f5"
       }
+    },
+    "dev_grid_z4C6mT": {
+      "type": "devGrid",
+      "blocks": {
+        "product_hVT6ey": {
+          "type": "product",
+          "settings": {
+            "product": "black-leather-bag",
+            "top": "238",
+            "right": "154"
+          }
+        },
+        "product_cK4U8e": {
+          "type": "product",
+          "settings": {
+            "product": "blue-silk-tuxedo",
+            "top": "222",
+            "right": "55"
+          }
+        },
+        "product_tpyLhK": {
+          "type": "product",
+          "settings": {
+            "product": "chequered-red-shirt",
+            "top": "82",
+            "right": "150"
+          }
+        },
+        "product_iHPWFW": {
+          "type": "product",
+          "settings": {
+            "product": "classic-leather-jacket",
+            "top": "71",
+            "right": "109"
+          }
+        },
+        "product_QwpixP": {
+          "type": "product",
+          "settings": {
+            "product": "classic-varsity-top",
+            "top": "104",
+            "right": "198"
+          }
+        },
+        "product_Ht6Hb9": {
+          "type": "product",
+          "settings": {
+            "product": "dark-denim-top",
+            "top": "164",
+            "right": "91"
+          }
+        }
+      },
+      "block_order": [
+        "product_hVT6ey",
+        "product_cK4U8e",
+        "product_tpyLhK",
+        "product_iHPWFW",
+        "product_QwpixP",
+        "product_Ht6Hb9"
+      ],
+      "name": "Grid",
+      "settings": {
+        "heading": "Tisso vison in the wild",
+        "cartBtn": "Add to cart",
+        "defOption": "Choose your size",
+        "btnBgColor1": "#FFF544",
+        "btnColor1": "#000000",
+        "btnHoverBg1": "#000000",
+        "btnHoverColor1": "#FFFFFF"
+      }
     }
   },
   "order": [
-    "featured_collection",
-    "dev_banner_XWeyjr"
+    "dev_banner_XWeyjr",
+    "dev_grid_z4C6mT"
   ]
 }
