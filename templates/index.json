@@ -11,6 +11,7 @@
   "sections": {
     "featured_collection": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "collection": "all",
         "products_to_show": 8,
@@ -44,9 +45,9 @@
         "text1": "",
         "btnLabel1": "",
         "btnLink1": "",
-        "bgColor1": "#F5F5F5",
+        "bgColor1": "#f5f5f5",
         "textColor1": "#000",
-        "btnBgColor1": "#FFF544",
+        "btnBgColor1": "#fff544",
         "btnColor1": "#000",
         "btnHoverBg1": "#000",
         "btnHoverColor1": "#fff",
@@ -59,9 +60,9 @@
         "textColor": "#000",
         "btnBgColor": "#000",
         "btnColor": "#fff",
-        "btnHoverBg": "#FFF544",
+        "btnHoverBg": "#fff544",
         "btnHoverColor": "#000",
-        "barBgColor": "#F5F5F5"
+        "barBgColor": "#f5f5f5"
       }
     }
   },
